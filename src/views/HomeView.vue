@@ -10,7 +10,7 @@
       <a href="/assets/YourResume.pdf" download class="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">
         Download Resume
       </a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="px-6 py-3 border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white">
+      <a href="https://www.linkedin.com/in/tousif-anjum-05b01b259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="px-6 py-3 border border-blue-600 text-blue-600 rounded hover:bg-blue-600 hover:text-white">
         LinkedIn
       </a>
     </div>
