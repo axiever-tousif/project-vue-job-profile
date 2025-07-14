@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Job Applications</h1>
+    <h1>Jobs Applications</h1>
     <JobList />
   </div>
 </template>
