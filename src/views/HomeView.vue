@@ -38,7 +38,7 @@
       <!-- Right Section - Profile Image -->
       <div class="relative">
         <img
-          :src="profileImage"
+          :src="profile"
           alt="Profile"
           class="w-44 h-44 md:w-60 md:h-60 object-cover rounded-full border-4 border-cyan-400 shadow-xl"
         />
