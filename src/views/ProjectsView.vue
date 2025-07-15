@@ -1,6 +1,8 @@
-<template>
-  <div class="p-8 text-center">
-    <h1 class="text-4xl font-bold text-blue-600 mb-4">My Projects</h1>
-    <p class="text-gray-700">Here I’ll showcase the projects I’ve worked on.</p>
-  </div>
-</template>
+<h2 class="text-3xl font-semibold">My Projects</h2>
+<ul class="mt-4 space-y-4">
+  <li>
+    <strong>Personal Portfolio Website</strong><br>
+    Built with Vue.js + Tailwind CSS. Showcases my resume and work.  
+    <br>🔗 <a href="https://stupendous-pudding-95fac8.netlify.app" class="text-blue-600 underline" target="_blank">Live Demo</a>
+  </li>
+</ul>
