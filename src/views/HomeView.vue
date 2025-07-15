@@ -17,19 +17,12 @@
         <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-6">
           <!-- ✅ Resume Button -->
           <a
-            href="/assets/Tousif Resume.pdf"
+            href="/assets/Tousif_Resume.pdf"
             download
             class="bg-cyan-400 text-[#0f172a] font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-cyan-300 transition"
-          >
+            >
             Download Resume
-            </a>
-            <a
-              href="/assets/YourResume.pdf"
-              download
-              class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-              >
-              Download Resume
-            </a>
+          </a>
           <!-- ✅ LinkedIn Button -->
           <a
             href="https://www.linkedin.com/in/tousif-anjum-05b01b259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
