@@ -1,33 +1,33 @@
 <template>
   <nav
-    class="bg-white shadow h-16 px-8 flex items-center justify-center space-x-8"
+    class="bg-blue-600 h-16 flex items-center justify-center px-8 shadow"
   >
     <RouterLink
       to="/"
-      class="text-gray-600 hover:text-blue-600 font-medium text-lg"
-      active-class="text-blue-600 font-bold"
-      exact-active-class="text-blue-600 font-bold"
+      class="text-white hover:text-yellow-300 font-semibold text-lg"
+      active-class="text-yellow-300 underline"
+      exact-active-class="text-yellow-300 underline"
     >
       Home
     </RouterLink>
     <RouterLink
       to="/about"
-      class="text-gray-600 hover:text-blue-600 font-medium text-lg"
-      active-class="text-blue-600 font-bold"
+      class="text-white hover:text-yellow-300 font-semibold text-lg ml-8"
+      active-class="text-yellow-300 underline"
     >
       About
     </RouterLink>
     <RouterLink
       to="/projects"
-      class="text-gray-600 hover:text-blue-600 font-medium text-lg"
-      active-class="text-blue-600 font-bold"
+      class="text-white hover:text-yellow-300 font-semibold text-lg ml-8"
+      active-class="text-yellow-300 underline"
     >
       Projects
     </RouterLink>
     <RouterLink
       to="/contact"
-      class="text-gray-600 hover:text-blue-600 font-medium text-lg"
-      active-class="text-blue-600 font-bold"
+      class="text-white hover:text-yellow-300 font-semibold text-lg ml-8"
+      active-class="text-yellow-300 underline"
     >
       Contact
     </RouterLink>
@@ -37,7 +37,3 @@
 <script setup>
 import { RouterLink } from 'vue-router'
 </script>
-
-<style scoped>
-/* You can add custom styling here if needed */
-</style>
