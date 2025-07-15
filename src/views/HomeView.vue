@@ -1,54 +1,70 @@
 <template>
-  <section class="min-h-screen bg-[#0f172a] text-white flex items-center justify-center px-4">
-    <div class="max-w-5xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-8">
-
-      <!-- Left Section -->
-      <div class="text-center md:text-left space-y-4">
-        <h2 class="text-3xl sm:text-4xl font-light">Hello, It's Me</h2>
-        <h1 class="text-4xl sm:text-6xl font-bold text-white">Tousif Anjum</h1>
-        <h3 class="text-2xl sm:text-3xl font-medium">
-          And I'm a <span class="text-cyan-400 font-bold">Frontend Developer</span>
-        </h3>
-        <p class="text-sm text-gray-300 max-w-md mx-auto md:mx-0">
-          I build responsive websites using Vue.js & Tailwind CSS. Let's create something amazing together!
+  <section class="min-h-screen flex justify-center items-center bg-darkBg px-4">
+    <div class="bg-darkCard rounded-2xl p-10 md:p-20 w-full max-w-6xl flex flex-col md:flex-row items-center md:space-x-16 shadow-2xl">
+      <!-- LEFT CONTENT -->
+      <div class="flex-1 text-center md:text-left">
+        <h3 class="text-textMain text-xl md:text-2xl mb-2">Hello, It's Me</h3>
+        <h1 class="text-4xl md:text-6xl font-bold text-textMain mb-4">
+          Tousif Anjum
+        </h1>
+        <h2 class="text-lg md:text-2xl text-textMain mb-6">
+          And I'm a <span class="text-primary">Frontend Developer</span>
+        </h2>
+        <p class="text-gray-400 mb-8 max-w-md">
+          I build responsive websites using Vue.js and Tailwind CSS. Let’s create something amazing together!
         </p>
 
-        <!-- Buttons -->
-        <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-6">
-          <!-- ✅ Resume Button -->
+        <!-- Social icons -->
+        <div class="flex justify-center md:justify-start space-x-4 mb-8">
           <a
-            href="/assets/Tousif_Resume.pdf"
-            download
-            class="border border-cyan-400 text-cyan-400 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-cyan-300 transition"
-          >
-            Download Resume
-          </a>
-
-          <!-- ✅ LinkedIn Button -->
-          <a
-            href="https://www.linkedin.com/in/tousif-anjum-05b01b259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            href="https://facebook.com"
             target="_blank"
-            class="border border-cyan-400 text-cyan-400 font-semibold px-6 py-3 rounded-full hover:bg-cyan-400 hover:text-[#0f172a] transition"
+            class="text-primary text-2xl hover:scale-125 transition"
           >
-            LinkedIn
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            class="text-primary text-2xl hover:scale-125 transition"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            class="text-primary text-2xl hover:scale-125 transition"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex justify-center md:justify-start space-x-4">
+          <a
+            href="#"
+            class="bg-primary text-darkBg px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-cyan-400 transition duration-300"
+          >
+            Download CV
           </a>
         </div>
       </div>
 
-      <!-- Right Section - Profile Image -->
-      <div class="relative">
-        <img
-          :src="profileImage"
-          alt="Profile"
-          class="w-44 h-44 md:w-60 md:h-60 object-cover rounded-full border-4 border-cyan-400 shadow-xl"
-        />
-        <!-- Neon glow -->
-        <div class="absolute inset-0 rounded-full blur-2xl opacity-40 bg-cyan-400 z-[-1]"></div>
+      <!-- RIGHT IMAGE -->
+      <div class="flex-1 mt-10 md:mt-0 flex justify-center md:justify-end">
+        <div class="relative w-64 h-64">
+          <div class="absolute inset-0 bg-primary blur-3xl rounded-[30%] opacity-50 animate-pulse"></div>
+          <img
+            src="/src/assets/profile.png"
+            alt="Tousif Anjum"
+            class="w-full h-full object-cover rounded-[30%] border-4 border-primary relative z-10"
+          />
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import profileImage from '../assets/profile.png'
+// no script needed for static hero
 </script>

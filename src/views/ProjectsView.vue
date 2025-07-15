@@ -1,13 +1,18 @@
 <template>
-  <div class="p-8">
-    <h1 class="text-3xl font-bold mb-4">Projects</h1>
-    <p>Personal Portfolio Website built with Vue.js and Tailwind CSS, deployed on Netlify.</p>
-    <a
-      href="https://stupendous-pudding-95fac8.netlify.app/"
-      target="_blank"
-      class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-    >
-      View Live Project
-    </a>
-  </div>
+  <section class="bg-darkBg text-textMain min-h-screen px-4 py-16">
+    <h2 class="text-primary text-3xl font-bold text-center mb-12">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-darkCard rounded-lg p-6 shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-bold text-primary mb-2">Personal Portfolio Website</h3>
+        <p class="text-gray-400 mb-4">
+          Designed and developed a responsive portfolio website to showcase my web development skills and resume downloads.
+        </p>
+        <p class="text-gray-400 mb-4">Technologies: Vue.js, Tailwind CSS, Netlify</p>
+        <a href="https://stupendous-pudding-95fac8.netlify.app/" target="_blank" class="text-primary underline">View Project</a>
+      </div>
+    </div>
+  </section>
 </template>
+
+<script setup>
+</script>
