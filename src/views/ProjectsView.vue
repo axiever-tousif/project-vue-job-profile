@@ -1,8 +1,13 @@
-<h2 class="text-3xl font-semibold">My Projects</h2>
-<ul class="mt-4 space-y-4">
-  <li>
-    <strong>Personal Portfolio Website</strong><br>
-    Built with Vue.js + Tailwind CSS. Showcases my resume and work.  
-    <br>🔗 <a href="https://stupendous-pudding-95fac8.netlify.app" class="text-blue-600 underline" target="_blank">Live Demo</a>
-  </li>
-</ul>
+<template>
+  <div class="p-8">
+    <h1 class="text-3xl font-bold mb-4">Projects</h1>
+    <p>Personal Portfolio Website built with Vue.js and Tailwind CSS, deployed on Netlify.</p>
+    <a
+      href="https://stupendous-pudding-95fac8.netlify.app/"
+      target="_blank"
+      class="inline-block mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+    >
+      View Live Project
+    </a>
+  </div>
+</template>
