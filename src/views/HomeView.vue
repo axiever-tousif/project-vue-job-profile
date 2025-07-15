@@ -19,7 +19,7 @@
           <a
             href="/assets/Tousif_Resume.pdf"
             download
-            class="border border-cyan-400 text-cyan-400  font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-cyan-300 transition"
+            class="border border-cyan-400 text-cyan-400 font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-cyan-300 transition"
           >
             Download Resume
           </a>
@@ -38,7 +38,7 @@
       <!-- Right Section - Profile Image -->
       <div class="relative">
         <img
-          :src="profile"
+          :src="profileImage"
           alt="Profile"
           class="w-44 h-44 md:w-60 md:h-60 object-cover rounded-full border-4 border-cyan-400 shadow-xl"
         />
@@ -50,9 +50,5 @@
 </template>
 
 <script setup>
-// No script logic needed
+import profileImage from '../assets/profile.png'
 </script>
-
-<style scoped>
-/* Optional extra styling */
-</style>
