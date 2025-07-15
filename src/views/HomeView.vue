@@ -19,14 +19,14 @@
           <a
             href="/assets/Tousif Resume.pdf"
             download
-            class="bg-cyan-400 text-[#0f172a] font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-cyan-300 transition"
+            class="bg-cyan-400  font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-cyan-300 transition"
           >
             Download Resume
             </a>
             <a
               href="/assets/YourResume.pdf"
               download
-              class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+              class="bg-cyan-400 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
               >
               Download Resume
           </a>
