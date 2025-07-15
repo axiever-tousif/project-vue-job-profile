@@ -17,7 +17,7 @@
         <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 mt-6">
           <!-- ✅ Resume Button -->
           <a
-            href="/assets/Tousif Resume.pdf"
+            href="/assets/Tousif_Resume.pdf"
             download
             class="bg-cyan-400  font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-cyan-300 transition"
           >
