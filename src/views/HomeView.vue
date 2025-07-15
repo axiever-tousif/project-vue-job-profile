@@ -1,70 +1,76 @@
 <template>
-  <section class="min-h-screen flex justify-center items-center bg-darkBg px-4">
-    <div class="bg-darkCard rounded-2xl p-10 md:p-20 w-full max-w-6xl flex flex-col md:flex-row items-center md:space-x-16 shadow-2xl">
-      <!-- LEFT CONTENT -->
+  <section class="min-h-screen flex justify-center items-center bg-[#0f172a] px-4">
+    <div class="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl p-10 rounded-3xl bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl">
+
+      <!-- LEFT SIDE (TEXT) -->
       <div class="flex-1 text-center md:text-left">
-        <h3 class="text-textMain text-xl md:text-2xl mb-2">Hello, It's Me</h3>
-        <h1 class="text-4xl md:text-6xl font-bold text-textMain mb-4">
+        <h3 class="text-gray-400 text-xl mb-2">Hello, It's Me</h3>
+        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
           Tousif Anjum
         </h1>
-        <h2 class="text-lg md:text-2xl text-textMain mb-6">
-          And I'm a <span class="text-primary">Frontend Developer</span>
+        <h2 class="text-lg md:text-2xl text-cyan-400 mb-6 font-semibold">
+          And I'm a Frontend Developer
         </h2>
-        <p class="text-gray-400 mb-8 max-w-md">
+        <p class="text-gray-400 mb-8 max-w-lg">
           I build responsive websites using Vue.js and Tailwind CSS. Let’s create something amazing together!
         </p>
-
-        <!-- Social icons -->
-        <div class="flex justify-center md:justify-start space-x-4 mb-8">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            class="text-primary text-2xl hover:scale-125 transition"
+        <div class="flex justify-center md:justify-start gap-4">
+          <RouterLink
+            to="/contact"
+            class="px-6 py-3 border border-cyan-400 text-cyan-400 rounded-full hover:bg-cyan-400 hover:text-gray-900 transition font-medium"
           >
-            <i class="fab fa-facebook-f"></i>
-          </a>
+            Contact Me
+          </RouterLink>
           <a
-            href="https://twitter.com"
-            target="_blank"
-            class="text-primary text-2xl hover:scale-125 transition"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a
-            href="https://linkedin.com"
-            target="_blank"
-            class="text-primary text-2xl hover:scale-125 transition"
-          >
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-
-        <!-- Buttons -->
-        <div class="flex justify-center md:justify-start space-x-4">
-          <a
-            href="#"
-            class="bg-primary text-darkBg px-6 py-3 rounded-full font-semibold shadow-lg hover:bg-cyan-400 transition duration-300"
+            href="/src/assets/Tousif_Resume.pdf"
+            download
+            class="px-6 py-3 bg-cyan-400 text-gray-900 rounded-full hover:bg-cyan-500 transition font-medium shadow-md"
           >
             Download CV
           </a>
         </div>
       </div>
 
-      <!-- RIGHT IMAGE -->
+      <!-- RIGHT SIDE (IMAGE) -->
       <div class="flex-1 mt-10 md:mt-0 flex justify-center md:justify-end">
-        <div class="relative w-64 h-64">
-          <div class="absolute inset-0 bg-primary blur-3xl rounded-[30%] opacity-50 animate-pulse"></div>
-          <img
-            src="/src/assets/profile.png"
-            alt="Tousif Anjum"
-            class="w-full h-full object-cover rounded-[30%] border-4 border-primary relative z-10"
-          />
+        <div class="relative w-60 h-60 md:w-80 md:h-80 hexagon overflow-hidden shadow-xl glow">
+          <img :src="photoUrl" alt="Tousif Anjum" class="w-full h-full object-cover" />
         </div>
       </div>
+
     </div>
   </section>
 </template>
 
 <script setup>
-// no script needed for static hero
+import photoUrl from '../assets/OIP.jpg'
+import { RouterLink } from 'vue-router'
 </script>
+
+<style scoped>
+/* HEXAGON CLIP PATH */
+.hexagon {
+  clip-path: polygon(
+    25% 5.77%, 
+    75% 5.77%, 
+    100% 50%, 
+    75% 94.23%, 
+    25% 94.23%, 
+    0% 50%
+  );
+  border: 4px solid #22d3ee;
+  transition: transform 0.3s;
+}
+
+.hexagon:hover {
+  transform: scale(1.05);
+}
+
+/* Neon Glow Effect */
+.glow {
+  box-shadow:
+    0 0 30px #22d3ee,
+    0 0 60px #22d3ee,
+    0 0 90px #22d3ee;
+}
+</style>
