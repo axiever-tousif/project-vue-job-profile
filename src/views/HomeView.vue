@@ -9,7 +9,7 @@
 
     <div class="flex flex-col sm:flex-row gap-4 mt-4">
       <a
-        href="/assets/YourResume.pdf"
+        href="/assets/Tousif Resume.pdf"
         download
         class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
       >
