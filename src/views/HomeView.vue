@@ -1,6 +1,6 @@
 <template>
   <section class="min-h-screen bg-[#0f172a] text-white flex items-center justify-center px-4">
-    <div class="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+    <div class="max-w-5xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-8">
 
       <!-- Left Section -->
       <div class="text-center md:text-left space-y-4">
@@ -40,7 +40,7 @@
         <img
           :src="profileImage"
           alt="Profile"
-          class="w-60 h-60 object-cover rounded-full border-4 border-cyan-400 shadow-xl"
+          class="w-44 h-44 md:w-60 md:h-60 object-cover rounded-full border-4 border-cyan-400 shadow-xl"
         />
         <!-- Neon glow -->
         <div class="absolute inset-0 rounded-full blur-2xl opacity-40 bg-cyan-400 z-[-1]"></div>
