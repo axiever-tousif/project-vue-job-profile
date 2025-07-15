@@ -34,7 +34,7 @@
       <!-- Right Side Image -->
       <div class="relative">
         <img
-          src="@/assets/profile.png"
+          :src="profileImage"
           alt="Profile"
           class="w-60 h-60 object-cover rounded-full border-4 border-cyan-400 shadow-xl"
         />
@@ -47,4 +47,7 @@
 
 <script setup>
 // no JS needed for now
+<script setup>
+import profileImage from '@/assets/profile.png'
+</script>
 </script>
