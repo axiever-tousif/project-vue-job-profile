@@ -46,8 +46,5 @@
 </template>
 
 <script setup>
-// no JS needed for now
-<script setup>
 import profileImage from '@/assets/profile.png'
-</script>
 </script>
