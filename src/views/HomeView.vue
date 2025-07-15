@@ -23,13 +23,6 @@
           >
             Download Resume
             </a>
-            <a
-              href="/assets/YourResume.pdf"
-              download
-              class="bg-cyan-400 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-              >
-              Download Resume
-          </a>
           <!-- ✅ LinkedIn Button -->
           <a
             href="https://www.linkedin.com/in/tousif-anjum-05b01b259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
