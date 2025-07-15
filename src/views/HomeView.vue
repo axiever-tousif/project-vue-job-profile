@@ -40,4 +40,15 @@
         <img
           :src="profileImage"
           alt="Profile"
-          cla
+          class="w-60 h-60 object-cover rounded-full border-4 border-cyan-400 shadow-xl"
+        />
+        <!-- Neon glow -->
+        <div class="absolute inset-0 rounded-full blur-2xl opacity-40 bg-cyan-400 z-[-1]"></div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+import profileImage from '../assets/profile.png'
+</script>
