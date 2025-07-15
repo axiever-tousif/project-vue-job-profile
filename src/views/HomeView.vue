@@ -19,7 +19,7 @@
           <a
             href="/assets/Tousif_Resume.pdf"
             download
-            class="bg-cyan-400  font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-cyan-300 transition"
+            class="border border-cyan-400 text-cyan-400  font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-cyan-300 transition"
           >
             Download Resume
             </a>
