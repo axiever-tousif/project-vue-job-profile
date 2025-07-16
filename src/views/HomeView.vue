@@ -1,39 +1,20 @@
 <template>
   <section class="min-h-screen flex justify-center items-center bg-[#5370b5] px-4">
     <div class="p-4 text-white">
-    <h1>Welcome to My Job Tracker</h1>
-    <p>This is your homepage content.</p>
+    <h1>Welcome to My Job Tracker Profile</h1>
+    <!-- LEFT SIDE (TEXT) -->
+      <div class="flex-1 text-center md:text-left">
+        <h2 class="text-gray-400 text-xl mb-2">Hi,I'am Tousif Anjum </h2>
+        
+        <p class="text-gray-400 mb-8 max-w-lg word">
+        I’m a passionate web developer specializing in building modern and responsive websites. I love working with Vue.js and creating sleek, user-friendly experiences.I build responsive websites using Vue.js and Tailwind CSS. Let’s create something amazing together!
+        </p>
+        
+      </div>
     </div>
     <div class="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl p-10 rounded-3xl bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl">
 
-      <!-- LEFT SIDE (TEXT) -->
-      <div class="flex-1 text-center md:text-left">
-        <h3 class="text-gray-400 text-xl mb-2">Hello, It's Me</h3>
-        <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
-          Tousif Anjum
-        </h1>
-        <h2 class="text-lg md:text-2xl text-cyan-400 mb-6 font-semibold">
-          And I'm a Frontend Developer
-        </h2>
-        <p class="text-gray-400 mb-8 max-w-lg">
-          I build responsive websites using Vue.js and Tailwind CSS. Let’s create something amazing together!
-        </p>
-        <div class="flex justify-center md:justify-start gap-4">
-          <RouterLink
-            to="/contact"
-            class="px-6 py-3 border border-cyan-400 text-cyan-400 rounded-full hover:bg-cyan-400 hover:text-gray-900 transition font-medium"
-          >
-            Contact Me
-          </RouterLink>
-          <a
-            href="/src/assets/Tousif_Resume.pdf"
-            download
-            class="px-6 py-3 bg-cyan-400 text-gray-900 rounded-full hover:bg-cyan-500 transition font-medium shadow-md"
-          >
-            Download CV
-          </a>
-        </div>
-      </div>
+      
 
       <!-- RIGHT SIDE (IMAGE) -->
       <div class="flex-1 mt-10 md:mt-0 flex justify-center md:justify-end">
@@ -72,6 +53,9 @@ import { RouterLink } from 'vue-router'
 
 .hexagon:hover {
   transform: scale(1.05);
+}
+.word {
+  font-size:20px;
 }
 
 /* Neon Glow Effect */
