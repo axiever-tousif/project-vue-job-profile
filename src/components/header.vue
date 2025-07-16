@@ -3,10 +3,9 @@
     <nav class="navbar">
       <div class="container">
         <div class="nav-links">
-          <a href="#" class="nav-link">Home</a>
-          <a href="#" class="nav-link">About</a>
-          <a href="#" class="nav-link">Projects</a>
-          <a href="#" class="nav-link">Contact</a>
+          <a href="/" class="nav-link">Home</a>
+          <a href="/about" class="nav-link">About</a>
+          <a href="/contact" class="nav-link">Contact</a>
         </div>
         <div class="action-btn">
           <a href="/assets/Tousif_Resume.pdf" target="_blank" rel="noopener noreferrer">

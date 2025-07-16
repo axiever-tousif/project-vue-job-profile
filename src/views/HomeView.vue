@@ -1,10 +1,10 @@
 <template>
   <section class="min-h-screen flex justify-center items-center bg-[#5370b5] px-4">
     <div class="p-4 text-white">
-    <h1>Welcome to My Job Tracker Profile</h1>
+    <h1 style="padding left :20px;">Welcome to My Job Tracker Profile</h1>
     <!-- LEFT SIDE (TEXT) -->
       <div class="flex-1 text-center md:text-left">
-        <h2 class="text-gray-400 text-xl mb-2">Hi,I'am Tousif Anjum </h2>
+        <h2 class="text-gray-400 text-xl mb-2" >Hi,I'am <span style="color: #00f9ff;">Tousif Anjum!</span> </h2>
         
         <p class="text-gray-400 mb-8 max-w-lg word">
         I’m a passionate web developer specializing in building modern and responsive websites. I love working with Vue.js and creating sleek, user-friendly experiences.I build responsive websites using Vue.js and Tailwind CSS. Let’s create something amazing together!
