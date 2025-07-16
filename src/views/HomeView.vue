@@ -1,5 +1,9 @@
 <template>
-  <section class="min-h-screen flex justify-center items-center bg-[#0f172a] px-4">
+  <section class="min-h-screen flex justify-center items-center bg-[#5370b5] px-4">
+    <div class="p-4 text-white">
+    <h1>Welcome to My Job Tracker</h1>
+    <p>This is your homepage content.</p>
+    </div>
     <div class="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl p-10 rounded-3xl bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl">
 
       <!-- LEFT SIDE (TEXT) -->
@@ -41,6 +45,10 @@
     </div>
   </section>
 </template>
+
+
+
+
 
 <script setup>
 import photoUrl from '../assets/OIP.jpg'
