@@ -33,7 +33,7 @@
 
 
 <script setup>
-import photoUrl from '../assets/OIP.jpg'
+import photoUrl from '../assets/OIP.jpeg'
 import { RouterLink } from 'vue-router'
 </script>
 

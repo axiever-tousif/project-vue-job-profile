@@ -34,7 +34,7 @@
         <div class="footer-column">
           <h2 class="footer-title">Contacts</h2>
           <p><i class="fa fa-phone"></i> +91 6204840788</p>
-          <p><i class="fa fa-phone"></i> +214 52564785</p>
+          <p><i class="fa fa-phone"></i> +91 9470311674</p>
           <p><i class="fa fa-envelope"></i> <span class="email">tousif@axiever.com</span></p>
         </div>
       </div>
