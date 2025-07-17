@@ -2,6 +2,19 @@
     margin: 0;
     padding: 0;
   } */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+}
+
   a {
     color: #fff;
     text-decoration: none;
@@ -674,7 +687,7 @@
 margin-top: -1px;
 margin-left: 10px;
 padding: 10px 20px;
-background-color: #0056b3;
+background-color: #84cd97;
 color: white;
 border: none;
 border-radius: 5px;

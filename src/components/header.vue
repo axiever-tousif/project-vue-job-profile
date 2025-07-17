@@ -1,20 +1,22 @@
 <template>
   <header class="header">
     <nav class="navbar">
-      <div class="container">
+      <div class="navbar-inner">
+        <!-- Navigation Links -->
         <div class="nav-links">
-          <a href="/" class="nav-link">Home</a>
-          <a href="/about" class="nav-link">About</a>
-          <a href="/contact" class="nav-link">Contact</a>
+          <router-link to="/" class="nav-link" :class="{ active: $route.path === '/' }">Home</router-link>
+          <router-link to="/about" class="nav-link" :class="{ active: $route.path === '/about' }">About</router-link>
+          <router-link to="/projects" class="nav-link" :class="{ active: $route.path === '/projects' }">Career Highlights</router-link>
+          <router-link to="/contact" class="nav-link" :class="{ active: $route.path === '/contact' }">Contact</router-link>
         </div>
-        <div class="action-btn">
-          <a href="/assets/Tousif_Resume.pdf" target="_blank" rel="noopener noreferrer">
-            <button class="learn-more-btn">Download CV</button>
+
+        <!-- Resume & LinkedIn Buttons -->
+        <div class="nav-buttons">
+          <a href="/assets/Tousif_Resume.pdf" target="_blank" rel="noopener">
+            <button class="action-btn">Download CV</button>
           </a>
-        </div>
-        <div class="action-btn">
-          <a href="https://www.linkedin.com/in/tousif-anjum-05b01b259?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
-            <button class="learn-more-btn">Linked In Profile</button>
+          <a href="https://www.linkedin.com/in/tousif-anjum-05b01b259" target="_blank" rel="noopener">
+            <button class="action-btn">LinkedIn Profile</button>
           </a>
         </div>
       </div>
@@ -22,64 +24,90 @@
   </header>
 </template>
 
-<script setup>
-// No additional logic needed for now
-</script>
-
 <style scoped>
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #cadae9;
-  color: white;
-  padding: 0.75rem 1rem;
-  z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
-  display: flex;
-  justify-content: center;
+.navbar {
+  background-color: #d3e4f2;
+  padding: 20px 40px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .container {
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1200px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .nav-links {
   display: flex;
-  gap: 1.5rem;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .nav-link {
-  color: black;
   text-decoration: none;
+  color: #000;
   font-weight: 600;
-  transition: color 0.3s ease;
-  border:2px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* ⬅️ Wider than before */
+  margin: 0 auto;
+  width: 100%;
 }
 
 .nav-link:hover {
-  color: #0af;
-  border:2px;
+  background-color: #e3f2fd;
+  color: #0077cc;
 }
 
-.learn-more-btn {
-  background-color: #0af;
-  border: none;
+.nav-link.active {
+  border: 2px solid #0077cc;
+  color: #0077cc;
+  background-color: white;
+}
+
+.action-btn {
+  background-color: #73d8a5;
   color: white;
-  padding: 0.5rem 1.25rem;
-  padding-top:4px;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
   font-weight: 600;
-  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.2s ease;
 }
 
-.learn-more-btn:hover {
-  background-color: #08c;
+.action-btn:hover {
+  background-color: #5cc491;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .nav-links,
+  .nav-buttons {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
 }
 </style>

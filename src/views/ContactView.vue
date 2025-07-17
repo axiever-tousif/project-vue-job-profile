@@ -51,7 +51,7 @@
       <div style="text-align: center;">
         <button
           type="submit"
-          style="background-color: #00f9ff; color: #1a1a2e; padding: 12px 30px; border: none; border-radius: 30px; font-weight: bold; cursor: pointer; box-shadow: 0 0 20px #00f9ff; transition: 0.3s;"
+          class="learn-more-btn"
           @mouseover="hovering = true"
           @mouseleave="hovering = false"
         >
