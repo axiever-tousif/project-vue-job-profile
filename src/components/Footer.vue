@@ -41,13 +41,13 @@
           <div class="footer-menu">
             <h2 class="footer-menu-names">Contacts</h2>
             <div class="">
-              <i class="fa fa-phone"><span class="">+91  6204840788</span></i>
+              <i class="fa fa-phone"><span class="">+916204840788</span></i>
             </div>
             <div class="">
               <i class="fa fa-phone"><span class="">+21452564785</span></i>
             </div>
             <div class="">
-              <i class="fa fa-envelope"><span class="">ertousifanjum@gmail.com</span></i>
+              <i class="fa fa-envelope"><span class="">tousif@axiever.com</span></i>
             </div>
           </div>
         </div>
